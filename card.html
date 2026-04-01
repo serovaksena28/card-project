@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Карточка телефона</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.phone-card {
+    display: flex;
+    max-width: 700px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    overflow: hidden;
+}
+
+.phone-card img {
+    width: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.phone-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.phone-info h2 {
+    margin-bottom: 10px;
+}
+
+.phone-info p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .phone-card {
+        flex-direction: column;
+    }
+
+    .phone-card img {
+        width: 100%;
+        height: 250px;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<article class="phone-card">
+    <img src="https://i.ibb.co/9s5WqjJ/iphone15pro.png" alt="Телефон">
+
+    <div class="phone-info">
+        <h2>iPhone 15 Pro</h2>
+        <p>Современный смартфон с мощным процессором и отличной камерой.</p>
+        <div class="price">120 000 ₽</div>
+        <button type="button">Купить</button>
+    </div>
+</article>
+
+</body>
+</html>
